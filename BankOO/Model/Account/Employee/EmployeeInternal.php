@@ -5,7 +5,7 @@ namespace julia\bankOO\Model\Account\Employee;
 use julia\bankOO\Model\Document;
 use julia\bankOO\Model\Person;
 
-class EmployeeInternal extends Person
+abstract class EmployeeInternal extends Person
 {
     private $employeeRole;
     private $salary;
@@ -22,18 +22,24 @@ class EmployeeInternal extends Person
         return $this->employeeRole;
     }
 
-    public function bonusCalculator()
-    {
-        if ($this->employeeRole == "Gerente")
-        {
-            return $this->salary;
-        }
-        return $this->salary*0.1;
-    }
-
     public function getSalary(): float
     {
         return $this->salary;
     }
+
+    public function bonusCalculator()
+    {
+        return $this->salary*0.1;
+    }
+
+    public function setRaise($raiseValue)
+    {
+        if ($raiseValue < 0 )
+        {
+            return "The raise value must be POSITIVE";
+        }
+    $this->salary += $raiseValue;
+    }
+
 }
 
