@@ -1,5 +1,6 @@
 <?php
 
+namespace julia\bankOO\Model;
 
 class Address
 {

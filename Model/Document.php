@@ -1,5 +1,9 @@
 <?php
 
+namespace julia\bankOO\Model;
+
+
+
 class Document
 {
     private string $cpfNumber;

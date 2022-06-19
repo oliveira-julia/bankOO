@@ -1,5 +1,7 @@
 <?php
 
+namespace julia\bankOO\Model\Account;
+
 class Account
 {
     private $holder;

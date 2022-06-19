@@ -1,5 +1,7 @@
 <?php
 
+namespace julia\bankOO\Model;
+
 class Person
 {
     protected $name;
