@@ -2,11 +2,11 @@
 
 namespace julia\bankOO\Model\Account;
 
-class Account
+class CheckingAccount
 {
     private $holder;
-    private $accountBalance;
-    private $accountLimit;
+    protected $accountBalance;
+    protected $accountLimit;
 
     public function __construct(Holder $holder)
     {
@@ -44,16 +44,18 @@ class Account
 
     public function withdraw($withdrawAmount)
     {
-        if (($this->accountBalance + $this->accountLimit)< $withdrawAmount)
+        $withdrawalTax = $withdrawAmount * $this->taxPercent();
+        $withdrawValue = $withdrawAmount + $withdrawalTax;
+        if (($this->accountBalance + $this->accountLimit)< $withdrawValue)
         {
             echo "You have insufficient funds in your account to complete the withdrawal", PHP_EOL;
             return;
         }
-        $this->accountBalance -= $withdrawAmount;
+        $this->accountBalance -= $withdrawValue;
         echo "Withdrawal successfully completed.", PHP_EOL;
     }
 
-    public function wireTransfer(float $transferAmount, Account $targetAccount)
+    public function wireTransfer(float $transferAmount, CheckingAccount $targetAccount)
     {
         if (($this->accountBalance + $this->accountLimit)< $transferAmount)
         {
@@ -63,6 +65,12 @@ class Account
         $this->withdraw($transferAmount);
         $targetAccount->deposit($transferAmount);
     }
+
+    protected function taxPercent():float
+    {
+        return 0.05;
+    }
 }
+
 
 ?>
