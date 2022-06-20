@@ -27,7 +27,7 @@ abstract class EmployeeInternal extends Person
         return $this->salary;
     }
 
-    public function bonusCalculator()
+    abstract public function bonusCalculator()
     {
         return $this->salary*0.1;
     }
