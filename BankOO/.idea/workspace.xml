@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3fccf060-9e56-43c3-b0c7-1c468b8b8016" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Model/.idea/Model.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model/Account/Account.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model/Account/CheckingAccount.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model/Account/Employee/EmployeeInternal.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model/Account/Holder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model/Address.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model/Document.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model/Person.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Service/BonusController.php" beforeDir="false" />
-    </list>
+    <list default="true" id="3fccf060-9e56-43c3-b0c7-1c468b8b8016" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Model/Account/Employee/developer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <state relative-caret-position="187">
+              <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -158,7 +144,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="727" />
@@ -245,16 +231,23 @@
       <updated>1655647767954</updated>
       <workItem from="1655647771769" duration="418000" />
       <workItem from="1655653594076" duration="3748000" />
-      <workItem from="1655661774402" duration="1329000" />
+      <workItem from="1655661774402" duration="1815000" />
     </task>
+    <task id="LOCAL-00001" summary="new features">
+      <created>1655663285373</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655663285373</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5495000" />
+    <option name="totallyTimeSpent" value="5981000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="736" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="736" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -279,6 +272,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new features" />
+    <option name="LAST_COMMIT_MESSAGE" value="new features" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Model/autoload.php" />
@@ -376,8 +373,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/Account/Employee/developer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        <state relative-caret-position="187">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
         </state>
       </provider>
     </entry>
