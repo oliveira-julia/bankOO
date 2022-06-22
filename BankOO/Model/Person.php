@@ -4,6 +4,7 @@ namespace julia\bankOO\Model;
 
 class Person
 {
+    use PropertiesAccess;
     protected $name;
     private $cpfNumber;
 

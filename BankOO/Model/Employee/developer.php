@@ -11,4 +11,9 @@ class developer extends EmployeeInternal
     {
         $this->setRaise($this->getSalary()*0.75);
     }
+
+    public function bonusCalculator()
+    {
+        return $this->getSalary() * 0.05;
+    }
 }

@@ -4,7 +4,7 @@
 namespace julia\bankOO\Model\Account\Employee;
 
 
-class Manager extends EmployeeInternal
+class Manager extends EmployeeInternal implements Authenticate
 {
     public function bonusCalculator()
     {

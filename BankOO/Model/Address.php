@@ -1,9 +1,18 @@
 <?php
 
 namespace julia\bankOO\Model;
+/**
+ * Class Endereco
+ * @package julia\BankOO\Model
+ * @property-read string $city
+ * @property-read string $state
+ * @property-read string $street
+ * @property-read string $number
+ */
 
-class Address
+final class Address
 {
+    use PropertiesAccess;
     private string $city;
     private string $state;
     private string $street;
@@ -17,23 +26,9 @@ class Address
         $this->number = $number;
     }
 
-    public function getCity(): string
+    public function __toString():string
     {
-        return $this->city;
-    }
-
-    public function getState(): string
-    {
-        return $this->state;
-    }
-
-    public function getstreet(): string
-    {
-        return $this->street;
-    }
-
-    public function getNumber(): string
-    {
-        return $this->number;
+        return "{$this->street}{$this->number}{$this->city}{$this->state}";
     }
 }
+?>
