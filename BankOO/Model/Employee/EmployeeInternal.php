@@ -27,7 +27,14 @@ abstract class EmployeeInternal extends Person
         return $this->salary;
     }
 
+<<<<<<< HEAD:BankOO/Model/Employee/EmployeeInternal.php
     abstract public function bonusCalculator();
+=======
+    abstract public function bonusCalculator()
+    {
+        return $this->salary*0.1;
+    }
+>>>>>>> origin/master:BankOO/Model/Account/Employee/EmployeeInternal.php
 
     public function setRaise($raiseValue)
     {
