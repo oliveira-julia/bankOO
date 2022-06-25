@@ -4,9 +4,9 @@ namespace julia\bankOO\Model\Account;
 
 abstract class Account
 {
-    private $holder;
-    protected $accountBalance;
-    protected $accountLimit;
+    private string $holder;
+    protected float $accountBalance;
+    protected float $accountLimit;
 
     public function __construct(Holder $holder)
     {

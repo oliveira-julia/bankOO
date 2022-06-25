@@ -7,8 +7,8 @@ use julia\bankOO\Model\Person;
 
 abstract class EmployeeInternal extends Person
 {
-    private $employeeRole;
-    private $salary;
+    private string $employeeRole;
+    private float $salary;
 
     public function __construct(string $employeeName,Document $employeeDocument,string $employeeRole, float $salary)
     {
@@ -27,14 +27,7 @@ abstract class EmployeeInternal extends Person
         return $this->salary;
     }
 
-<<<<<<< HEAD:BankOO/Model/Employee/EmployeeInternal.php
     abstract public function bonusCalculator();
-=======
-    abstract public function bonusCalculator()
-    {
-        return $this->salary*0.1;
-    }
->>>>>>> origin/master:BankOO/Model/Account/Employee/EmployeeInternal.php
 
     public function setRaise($raiseValue)
     {
@@ -42,8 +35,7 @@ abstract class EmployeeInternal extends Person
         {
             return "The raise value must be POSITIVE";
         }
-    $this->salary += $raiseValue;
+    return $this->salary += $raiseValue;
     }
-
 }
 
