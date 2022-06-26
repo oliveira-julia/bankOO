@@ -4,6 +4,8 @@ namespace julia\bankOO\Model;
 
 
 
+use http\Exception\InvalidArgumentException;
+
 class Document
 {
     private string $cpfNumber;
@@ -65,7 +67,7 @@ class Document
     {
         if ($this->checkDocument($cpfNumber) == false)
         {
-            echo ("The document is invalid"), PHP_EOL;
+            throw new InvalidArgumentException();
         }
     }
 

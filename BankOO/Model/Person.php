@@ -28,8 +28,7 @@ class Person
     protected function checkName($name)
     {
         if (strlen($name) < 3) {
-            echo "The name lenght must be at lest 3 characters long.";
-            exit();
+            throw new InvalidNameException();
         }
     }
 

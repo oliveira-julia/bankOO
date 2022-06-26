@@ -2,9 +2,11 @@
 
 namespace julia\bankOO\Model\Account;
 
+use http\Exception\InvalidArgumentException;
+
 abstract class Account
 {
-    private string $holder;
+    private Holder $holder;
     protected float $accountBalance;
     protected float $accountLimit;
 
@@ -35,8 +37,7 @@ abstract class Account
     {
         if($depositAmount < 0)
         {
-            echo "It's not possible to make a deposit of a negative amount.", PHP_EOL;
-            return;
+            throw new InvalidArgumentException();
         }
         $this->accountBalance += $depositAmount;
         echo "Deposit successfully completed.", PHP_EOL;
@@ -48,8 +49,7 @@ abstract class Account
         $withdrawValue = $withdrawAmount + $withdrawalTax;
         if (($this->accountBalance + $this->accountLimit)< $withdrawValue)
         {
-            echo "You have insufficient funds in your account to complete the withdrawal", PHP_EOL;
-            return;
+            throw new InsufficientFundsException($withdrawValue, $this->accountBalance);
         }
         $this->accountBalance -= $withdrawValue;
         echo "Withdrawal successfully completed.", PHP_EOL;
