@@ -1,0 +1,19 @@
+{
+    "name": "oliveira-julia/bank-oo",
+    "description": "Projeto que emula funções de um banco",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "OliveiraJulia\\BankOo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Julia",
+            "email": "juliapereiraengc@gmail.com"
+        }
+    ],
+    "require": {
+      "ext-json": "*"
+    }
+}
